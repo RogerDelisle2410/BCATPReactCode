@@ -1,0 +1,85 @@
+{
+  "name": "bcatpreact",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/eslint-parser": "^7.5.4",
+    "@emotion/react": "^11.8.2",
+    "@googlemaps/react-wrapper": "^1.1.26",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.0",
+    "@table-library/react-table-library": "^2.0.8",
+    "@types/react-router-dom": "^5.3.3",
+    "babel-eslint": "^10.1.0",
+    "bootstrap": "^4.6.0",
+    "dotenv": "^16.0.0",
+    "eslint-config-react-app": "^6.0.0",
+    "expo-cli": "^5.3.0",
+    "google-map-react": "^2.1.10",
+    "google-maps-react": "^2.0.6",
+    "jquery": "^3.6.0",
+    "merge": "^2.1.1",
+    "oidc-client": "^1.11.5",
+    "react": "^16.0.0",
+    "react-admin": "^3.19.10",
+    "react-awesome-lightbox": "^1.8.1",
+    "react-dom": "^16.0.0",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^4.3.1",
+    "react-images": "^1.2.0-beta.7",
+    "react-lightbox-pack": "^0.1.5",
+    "react-modal": "^3.14.4",
+    "react-modal-image": "^2.5.0",
+    "react-native": "^0.67.3",
+    "react-native-image-modal": "^2.0.4",
+    "react-native-web": "^0.17.7",
+    "react-paginate": "^8.1.2",
+    "react-pagination-table": "^2.0.2",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.3.0",
+    "react-table": "^7.7.0",
+    "react-table-scrollbar": "^0.1.11",
+    "react-tooltip": "^4.2.21",
+    "reactjs-popup": "^2.0.5",
+    "reactstrap": "^8.4.1",
+    "rimraf": "^2.6.2",
+    "simple-react-lightbox": "^3.6.9-0",
+    "state-pool": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.48.2",
+    "@types/googlemaps": "^3.43.3",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.13",
+    "ajv": "^6.12.6",
+    "cross-env": "^5.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "modclean": "^3.0.0-beta.1",
+    "nan": "^2.15.0",
+    "postcss": "^8.4.12",
+    "react-scripts": "^5.0.0",
+    "typescript": "^3.9.10"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "rimraf ./build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src/"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

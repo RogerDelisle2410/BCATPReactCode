@@ -35,8 +35,9 @@ export class NavMenu extends Component {
                         <div className=' col-lg-6' style={{ display: 'flex', justifyContent: 'center', color: 'white' }} >
                             <a href='https://en.wikipedia.org/wiki/History_of_the_Canadian_Army' target="_blank"      >
                                 <h2>Canadian Military Bases and Armaments</h2>
-                            </a>
-                        </div>                        
+                            </a>                           
+                        </div>                    
+
                         <div className="col-lg-3" >
                             <img className='img-responsive' src={flag2} alt="flag2 image" style={{ float: 'left', width: '150px', height: '80px' }} />
                         </div>
@@ -116,7 +117,8 @@ export class NavMenu extends Component {
                             </ul>
                         </Container>
                     </Navbar>
-                </header></>
+                </header>                
+            </>
         );
     }
 }

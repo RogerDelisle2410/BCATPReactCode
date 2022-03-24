@@ -79,7 +79,7 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
         let contents = this.state.loading
             ? <p><em>Loading...</em></p>
             : this.renderBcatpTable(this.state.bcatpList);
-
+       
         return <div>
             {contents}
         </div>;
@@ -220,9 +220,9 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
                                     </td>
                                 </tr>
                                 )}
-                            </tbody>
+                               </tbody>
                         </table>
-                    </TableScrollbar>
+                    </TableScrollbar><td style={{ fontWeight: 'bold' }}>JRD.Consulting@hotmail.com (2022)</td>
                 </>
             );
         }
@@ -282,9 +282,9 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
                                     </td>
                                 </tr>
                                 )}
-                            </tbody>
+                            </tbody>   
                         </table>
-                    </TableScrollbar>
+                    </TableScrollbar><td style={{ fontWeight: 'bold' }}>JRD.Consulting@hotmail.com (2022)</td>
                 </>
             );
         }

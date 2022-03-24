@@ -46,6 +46,7 @@
     "state-pool": "^0.7.1"
   },
   "devDependencies": {
+    "@angular/cli": "^13.3.0",
     "@types/google.maps": "^3.48.2",
     "@types/googlemaps": "^3.43.3",
     "@types/react": "^17.0.39",

@@ -54,14 +54,14 @@ html, body {
 .action {
     display: block;
     width: 40px;
-    height: 30px; 
+    height: 30px;
 }
 
 .action2 {
     flex-direction: row;
     display: inline-block;
     width: 40px;
-    height: 30px;  
+    height: 30px;
 }
 
 .action3 {
@@ -179,7 +179,7 @@ input[type="x"] {
     display: flex;
     flex-direction: row;
     width: 200px;
-    height: 25px; 
+    height: 25px;
 }
 
 .input1 {
@@ -229,4 +229,9 @@ input[type="x"] {
 .input2 {
     width: 600px;
     margin-left: 0px;
+}
+
+.ModalImagePic {
+    width: 100px;
+    height: 70px;
 }

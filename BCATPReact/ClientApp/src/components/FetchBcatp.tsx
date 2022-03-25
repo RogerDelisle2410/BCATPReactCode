@@ -6,6 +6,9 @@ import TableScrollbar from 'react-table-scrollbar';
 import editpng from './img/pencil.png';
 import deletepng from './img/trash.png';
 import mappng from './img/map.png';
+import ModalImage from "react-modal-image";
+import Modal from "react-modal";
+import ReactTooltip from 'react-tooltip';
 
 ///*  taskkill /f /im node.exe  */  
 
@@ -79,7 +82,7 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
         let contents = this.state.loading
             ? <p><em>Loading...</em></p>
             : this.renderBcatpTable(this.state.bcatpList);
-       
+
         return <div>
             {contents}
         </div>;
@@ -133,6 +136,7 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
     handleSearch = (event) => {
         this.display(event);
     }
+
 
     private display(event) {
 
@@ -209,25 +213,31 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
                                     <td style={{ width: '150px' }}>{bca.latitude}</td>
                                     <td style={{ width: '350px' }}>{bca.comment}</td>
                                     <td>
-                                        <button className="action2" onClick={(id) => this.handleEdit(bca.id)}>
+                                        <button className="action2" onClick={(id) => this.handleEdit(bca.id)} data-tip data-for="editTip">
                                             <img height="25px" width="25px" src={editpng} />
+
                                         </button>
-                                        <button className="action2" onClick={(id) => this.handleDelete(bca.id, bca.name)} >
-                                            <img height="25px" width="25px" src={deletepng} />                                              </button>
-                                        <button className="action2" onClick={(id) => this.handleMap(bca.id)}>
+                                        <button className="action2" onClick={(id) => this.handleDelete(bca.id, bca.name)} data-tip data-for="deleteTip">
+                                            <img height="25px" width="25px" src={deletepng} />
+
+                                        </button>
+                                        <button className="action2" onClick={(id) => this.handleMap(bca.id)} data-tip data-for="mapTip">
                                             <img height="25px" width="25px" src={mappng} />
+
                                         </button>
+                                        <ReactTooltip id="editTip" place="top" effect="solid">Edit</ReactTooltip>
+                                        <ReactTooltip id="deleteTip" place="top" effect="solid">Delete</ReactTooltip>
+                                        <ReactTooltip id="mapTip" place="top" effect="solid">Map</ReactTooltip>
                                     </td>
                                 </tr>
                                 )}
-                               </tbody>
+                            </tbody>
                         </table>
                     </TableScrollbar><td style={{ fontWeight: 'bold' }}>JRD.Consulting@hotmail.com (2022)</td>
                 </>
             );
         }
-        else
-        {
+        else {
             return (
                 <>
                     <div className="flexbox-container topHeader" style={{ height: '35px' }}>
@@ -271,18 +281,26 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
                                     })()}
                                     <td style={{ width: '100px', alignContent: 'center' }}>
                                         <img alt="no image" src={bca.comment} width={100} height={70} onClick={(id) => this.handleImage(bca.id, bca.name, bca.wiki)} />
+                                        {/*<ModalImage*/}
+                                        {/*    small={bca.comment} className='ModalImagePic' medium={bca.comment} hideDownload hideZoom >*/}
+                                        {/*    <a href={bca.wiki} target="_blank"> {bca.name}</a>*/}
+                                        {/*</ModalImage>*/}
                                     </td>
                                     <td style={{ width: '100px' }}>
-                                        <button className="action" onClick={(id) => this.handleEdit(bca.id)}>
+                                        <button className="action" onClick={(id) => this.handleEdit(bca.id)} data-tip data-for="editTip">
                                             <img height="25px" width="25px" src={editpng} />
+
                                         </button>
-                                        <button className="action" onClick={(id) => this.handleDelete(bca.id, bca.name)}>
+                                        <button className="action" onClick={(id) => this.handleDelete(bca.id, bca.name)} data-tip data-for="deleteTip">
                                             <img height="25px" width="25px" src={deletepng} />
+
                                         </button>
+                                        <ReactTooltip id="editTip" place="top" effect="solid">Edit</ReactTooltip>
+                                        <ReactTooltip id="deleteTip" place="top" effect="solid">Delete</ReactTooltip>
                                     </td>
                                 </tr>
                                 )}
-                            </tbody>   
+                            </tbody>
                         </table>
                     </TableScrollbar><td style={{ fontWeight: 'bold' }}>JRD.Consulting@hotmail.com (2022)</td>
                 </>

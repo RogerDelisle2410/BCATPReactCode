@@ -22,7 +22,9 @@ namespace BCATPReact.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server = tcp:bcatpserver.database.windows.net,1433; Initial Catalog = bcatpdb2; Persist Security Info = False; User ID = jrd.consulting@hotmail.com@bcatpserver; Password = LillyTheDog01-; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
+                optionsBuilder.UseSqlite("DataSource=BCATPDB2.db");
+
+                //optionsBuilder.UseSqlServer("Server = tcp:bcatpserver.database.windows.net,1433; Initial Catalog = bcatpdb2; Persist Security Info = False; User ID = jrd.consulting@hotmail.com@bcatpserver; Password = LillyTheDog01-; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -30,16 +30,16 @@ export class NavMenu extends Component {
                 <Navbar className="navbar-expand-lg topHeader" style={{ height: '100px' }} >
                     <Container className=" justify-content-center col-lg-12 navbar-nav flex-grow" >                         
                         <div className="col-lg-3" >
-                            <img className='img-responsive' src={flag1} alt="flag1 image" style={{ float: 'right', width: '150px', height:'80px' }} />
+                            <img className='img-responsive img1' src={flag1} alt="flag1 image" />
                         </div>
-                        <div className=' col-lg-6' style={{ display: 'flex', justifyContent: 'center', color: 'white' }} >
+                        <div className=' col-lg-6 aDiv'  >
                             <a href='https://en.wikipedia.org/wiki/History_of_the_Canadian_Army' target="_blank"      >
                                 <h2>Canadian Military Bases and Armaments</h2>
                             </a>                           
                         </div>                    
 
                         <div className="col-lg-3" >
-                            <img className='img-responsive' src={flag2} alt="flag2 image" style={{ float: 'left', width: '150px', height: '80px' }} />
+                            <img className='img-responsive img2' src={flag2} alt="flag2 image" />
                         </div>
                     </Container>
                 </Navbar>

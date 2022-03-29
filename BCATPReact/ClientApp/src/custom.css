@@ -201,9 +201,41 @@ input[type="x"] {
     margin-top: 5px;
 }
 
+.button2 {
+    float: right;
+    font-weight: bold;
+    width: 60px;
+    margin-top: 5px;
+}
+
+.aDiv {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+ 
 .flexbox-container {
     display: flex;
     flex-direction: row;
+}
+
+.email {
+    font-weight: bold;
+    position: fixed;
+    bottom: 10px;
+}
+
+.img1 {
+    float: right;
+    width: 150px;
+    height: 80px;
+}
+
+.img2 {
+    float: left;
+    width: 150px;
+    height: 80px;
 }
 
 .mapbox {

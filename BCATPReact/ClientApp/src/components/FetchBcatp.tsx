@@ -181,10 +181,10 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
                         </div>
                         <div style={{ width: '450px' }}></div>
                         <div style={{ float: 'right', width: '100px' }}>
-                            <button onClick={(id) => this.handleCreateNew()} style={{ float: 'right', fontWeight: 'bold', width: '60px', marginTop: '5px' }}>Create</button>
+                            <button className='button2' onClick={(id) => this.handleCreateNew()} >Create</button>
                         </div>
                         <div style={{ float: 'right', width: '100px' }}>
-                            <button onClick={(id) => this.handleMaint()} style={{ float: 'right', fontWeight: 'bold', width: '60px', marginTop: '5px' }}>Maint</button>
+                            <button className='button2' onClick={(id) => this.handleMaint()} >Maint</button>
                         </div>
                     </div>
                     <table>
@@ -258,10 +258,10 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
                         </div>
                         <div style={{ width: '450px' }}></div>
                         <div style={{ float: 'right', width: '100px' }}>
-                            <button onClick={(id) => this.handleCreateNew()} style={{ float: 'right', fontWeight: 'bold', width: '60px' }}>Create</button>
+                            <button className='button2' onClick={(id) => this.handleCreateNew()} >Create</button>
                         </div>
                         <div style={{ float: 'right', width: '100px' }}>
-                            <button onClick={(id) => this.handleMaint()} style={{ float: 'right', fontWeight: 'bold', width: '60px' }}>Maint</button>
+                            <button className='button2' onClick={(id) => this.handleMaint()} >Maint</button>
                         </div>
                     </div>
 

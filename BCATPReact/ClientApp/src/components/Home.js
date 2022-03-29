@@ -15,12 +15,12 @@ export class Home extends Component {
                         <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
                         <li><a href='https://facebook.github.io/react/'>React</a> for client-side code</li>
                         <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
-                        <li>Azure MSSQL Database</li>
+                        <li>SQLite DB</li>
                         <li>Google agm-map</li>
                         <li>Azure DevOps CD/CI</li>
                         <li>VS2019</li>
                         <br /><br /> <br /><br /> <br /><br /> <br /><br />
-                        <td style={{ fontWeight: 'bold', position: 'fixed',  bottom: '10px' }}>JRD.Consulting@hotmail.com (2022)</td>
+                        <td className='email'>JRD.Consulting@hotmail.com (2022)</td>
                     </ul>
                 </div>
                 <br /><br />

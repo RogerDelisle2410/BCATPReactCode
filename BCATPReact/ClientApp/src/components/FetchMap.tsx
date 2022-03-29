@@ -22,7 +22,6 @@ const defaultOptions = {
         fullscreenControl: false,
         mapTypeIds: ['hybrid'],
     },
-
 };
 
 interface FetchMapBcatpDataState {

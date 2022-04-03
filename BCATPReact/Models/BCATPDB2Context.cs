@@ -22,9 +22,14 @@ namespace BCATPReact.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite("DataSource=BCATPDB2.db");
+                //Sqlite connection string
+                //optionsBuilder.UseSqlite("DataSource=BCATPDB2.db");
 
-                //optionsBuilder.UseSqlServer("Server = tcp:bcatpserver.database.windows.net,1433; Initial Catalog = bcatpdb2; Persist Security Info = False; User ID = jrd.consulting@hotmail.com@bcatpserver; Password = LillyTheDog01-; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
+                //Azure connection string
+                optionsBuilder.UseSqlServer("Server=tcp:bcatpdb.database.windows.net,1433;Initial Catalog=bcatpdb2;Persist Security Info=False;User ID=jrd.consulting@hotmail.com@bcatpdb;Password=LillyTheDog01-;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+                //SqlServer connection string
+                //optionsBuilder.UseSqlServer("Data Source=DESKTOP-M963UP8;Initial Catalog=bcatpdb2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

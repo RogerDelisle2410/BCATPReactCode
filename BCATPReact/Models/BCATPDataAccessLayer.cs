@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace BCATPReact.Models
 {
-    public class ALLDATADataAccessLayer
+    public class ALLDataAccessLayer
     {
         private readonly BCATPDB2Context db = new();
         public IEnumerable<AllData> GetAllData(string tableName, string searchName)

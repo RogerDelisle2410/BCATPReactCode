@@ -281,10 +281,6 @@ export class FetchBcatp extends React.Component<RouteComponentProps<{}>, FetchBc
                                     })()}
                                     <td style={{ width: '100px', alignContent: 'center' }}>
                                         <img alt="no image" src={bca.comment} width={100} height={70} onClick={(id) => this.handleImage(bca.id, bca.name, bca.wiki)} />
-                                        {/*<ModalImage*/}
-                                        {/*    small={bca.comment} className='ModalImagePic' medium={bca.comment} hideDownload hideZoom >*/}
-                                        {/*    <a href={bca.wiki} target="_blank"> {bca.name}</a>*/}
-                                        {/*</ModalImage>*/}
                                     </td>
                                     <td style={{ width: '100px' }}>
                                         <button className="action" onClick={(id) => this.handleEdit(bca.id)} data-tip data-for="editTip">

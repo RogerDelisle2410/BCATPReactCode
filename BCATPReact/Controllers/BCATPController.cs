@@ -6,7 +6,7 @@ namespace BCATPReact.Controllers
 {
     public class ALLDATAController : ControllerBase
     {
-        private readonly ALLDATADataAccessLayer objalldata = new();
+        private readonly ALLDataAccessLayer objalldata = new();
 
         [HttpGet]
         [Route("api/AllData2/Index/{tabName}/{searchName}")]

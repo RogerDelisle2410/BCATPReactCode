@@ -9,8 +9,8 @@ import mappng from './img/map.png';
 import ModalImage from "react-modal-image";
 import Modal from "react-modal";
 import ReactTooltip from 'react-tooltip';
-
 ///*  taskkill /f /im node.exe  */  
+
 
 interface FetchBcatpDataState {
     bcatpList: BcatpData[];

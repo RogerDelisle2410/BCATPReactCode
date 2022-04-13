@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a30ea11.css",
+    "main.js": "/static/js/main.f04d7ef9.js",
+    "static/media/CanadianArmedForces.png": "/static/media/CanadianArmedForces.f52bcd5241f41ca0ece3.png",
+    "static/media/CanadianForcesEnsign.png": "/static/media/CanadianForcesEnsign.ddf27a7f207a928fad50.png",
+    "index.html": "/index.html",
+    "main.1a30ea11.css.map": "/static/css/main.1a30ea11.css.map",
+    "main.f04d7ef9.js.map": "/static/js/main.f04d7ef9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a30ea11.css",
+    "static/js/main.f04d7ef9.js"
+  ]
+}
